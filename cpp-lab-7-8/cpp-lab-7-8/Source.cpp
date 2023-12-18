@@ -531,7 +531,11 @@ int main() {
     cout << "Вы впервые в нашем автосалоне или являететсь постоянным клиентом? ";
     cin >> status;
 
-    
+    char* vehiclebrand = new char[32];
+    int mileage;
+    int releaseyear;
+    int stateregistrationnumber;
+
     char* A = new char[32];
     cout << "Вы хотите арендовать автомобиль или пройти техническое обслуживание? ";
     cin >> A;
@@ -546,10 +550,7 @@ int main() {
         cin >> B;
         if (strcmp(B, "Легковой автомобиль")) {
             Passenger_car N;
-            char* vehiclebrand = new char[32];
-            int mileage;
-            int releaseyear;
-            int stateregistrationnumber;
+            
             cout << "Введите марку машины: ";
             cin >> vehiclebrand;
             cout << "Введите желаемый пробег: ";
@@ -562,10 +563,7 @@ int main() {
         }
         else if (strcmp(B, "Грузовик")) {
             Truck N;
-            char* vehiclebrand = new char[32];
-            int mileage;
-            int releaseyear;
-            int stateregistrationnumber;
+            
             cout << "Введите марку машины: ";
             cin >> vehiclebrand;
             cout << "Введите желаемый пробег: ";
@@ -578,10 +576,7 @@ int main() {
         }
         else {
             Motorcycle N;
-            char* vehiclebrand = new char[32];
-            int mileage;
-            int releaseyear;
-            int stateregistrationnumber;
+            
             cout << "Введите марку машины: ";
             cin >> vehiclebrand;
             cout << "Введите желаемый пробег: ";
@@ -596,10 +591,6 @@ int main() {
 
 
     else {
-        char* vehiclebrand = new char[32];
-        int mileage;
-        int releaseyear;
-        int stateregistrationnumber;
         cout << "Введите марку своей машины: ";
         cin >> vehiclebrand;
         cout << "Введите пробег: ";
